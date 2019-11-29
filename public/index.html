@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- 
+      描述当前网站图标文件
+      index.html中路径定义语法 <%= BASE_URL %>
+      =><%= BASE_URL %>描述项目所在服务器目录的
+     -->
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>film-project</title>
   </head>
@@ -12,6 +17,10 @@
       <strong>We're sorry but film-project doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <!-- 
+      构建的文件将被装载到该注释后面
+      装载项目目录下除去public目录中静态资源以外的其他文件，打包后的js整合文件（app.js）
+     -->
     <!-- built files will be auto injected -->
   </body>
 </html>
